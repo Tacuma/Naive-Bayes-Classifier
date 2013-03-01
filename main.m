@@ -34,12 +34,13 @@ for p = 1:rows(B)								# Loop For all the rows of Matrix B containing the test
 	YesNoProb = {0,0};							# Creates a matrix to hold the probabilities for Yes and No
 	YesOrNo = {"Yes","No"};							# String matrix holding the strings "Yes" and "No"
 	for h=1:columns(YesOrNo)						# Iterating twice for the yes and the no probability for each test case
-		Prob = {0,0,0,0}; 						# Creates a matrix holding the probabilities of each word per line
+		for l= 1:columns(B)
+			Prob = {1:l}; 				                 # Creates a matrix holding the probabilities of each word per line
+		end 						
 		for i=1:columns(B)						 # Loop Calculateing each probability of each word per line
 			count = 0;                             			 # Counter for (Selected Word) and "Yes" appearances
 			count2 = 0;                            			 # Counter for "Yes" appearances
 			for j=1:rows(A)						 # Loop iterating each row in the train.dat file, collecting the counts of each (Selected Word)
-	
 				z = strcmp(B{p,i},A{j,i});             		 # Compares (Selected Word) for matches in the train.dat array
 				z2 = strcmp(YesOrNo{1,h},A{j,columns(A)});   	 # This counts the number of times "Yes/No" appears
 				z=z+z2;
