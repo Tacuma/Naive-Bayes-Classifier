@@ -23,7 +23,7 @@ in the file "train.dat" as reference:
     Rain        Mild    High        Strong      No
    
   
-When test.dat is read in, the algorithm will make a conclusion as to whether scenario is probable (YES), or 
+When test.dat is read in, the algorithm will make a conclusion as to whether the following scenarios are probable (YES), or 
 improbable (NO).
 
     Sunny       Hot     High        Weak
