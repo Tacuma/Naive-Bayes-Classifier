@@ -5,7 +5,7 @@ Naive Bayes Classifier
 #Description:
 
 This program uses Naive bayes to calculate whether a given weather scenario will occur, given the data set
-in the file "train.dat" as reference: 
+in the file "train.dat" as reference:- 
 
     Sunny       Hot     High        Weak        No
     Sunny       Hot     High        Strong      No
