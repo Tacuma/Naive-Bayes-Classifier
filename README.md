@@ -30,7 +30,7 @@ improbable (NO).
     Sunny       Hot     High        Strong
     Overcast    Hot     High        Weak
 
-This algoritm is also very popular in spam filters.
+This algorithm is also very popular in spam filters.
 
 Output:
 =======
